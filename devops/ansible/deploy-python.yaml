@@ -1,12 +1,12 @@
 - name: Deploy Python app
   hosts: all
-  become: yes
+  become: true
   tasks:
     - name: Update and upgrade system
       apt:
         upgrade: yes
         update_cache: yes
-        cache_valid_time: 3600
+        cache_valid_time: 86400
     - name: Install dependencies
       apt:
         pkg:
