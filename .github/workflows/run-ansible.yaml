@@ -43,7 +43,7 @@ jobs:
     - name: Run Ansible Playbooks
       working-directory: ./devops/ansible/
       run: |
-        ansible-playbook install-nginx.yaml
+        ansible-playbook install-nginx-ansible.yaml
     - name: Deploy Python via Ansible
       working-directory: ./devops/ansible/
       run: |
